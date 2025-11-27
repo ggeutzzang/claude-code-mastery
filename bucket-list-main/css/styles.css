@@ -1,0 +1,274 @@
+/* 커스텀 스타일 (Tailwind CSS 보완용) */
+
+/* 배경 그라데이션 */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* 필터 버튼 활성화 스타일 */
+.filter-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #4b5563;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+/* 버킷 리스트 항목 애니메이션 */
+.bucket-item {
+    animation: slideIn 0.3s ease-out;
+    transition: all 0.3s ease;
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bucket-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 완료된 항목 스타일 */
+.bucket-item .line-through {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* 체크박스 호버 효과 */
+.bucket-item button:first-child:hover {
+    transform: scale(1.2);
+    filter: brightness(1.1);
+}
+
+/* 버튼 기본 스타일 강화 */
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.95) !important;
+}
+
+/* 추가 버튼 그라데이션 */
+button[type="submit"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+button[type="submit"]:hover {
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    transform: translateY(-2px);
+}
+
+/* 스크롤바 스타일 (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/* 모바일 반응형 */
+@media (max-width: 640px) {
+    .bucket-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bucket-item > div:last-child {
+        width: 100%;
+        justify-content: flex-end;
+        margin-top: 8px;
+    }
+
+    .filter-btn {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* 입력 필드 포커스 효과 */
+input:focus {
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3), 0 4px 12px rgba(102, 126, 234, 0.2);
+    border-color: #667eea;
+}
+
+input {
+    transition: all 0.3s ease;
+}
+
+/* 카드 스타일 개선 */
+.bg-white {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.bg-white:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* 헤더 타이틀 스타일 */
+header h1 {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* 빈 상태 메시지 애니메이션 */
+#emptyState {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* 모달 백드롭 애니메이션 */
+#editModal {
+    animation: fadeIn 0.2s ease-in;
+}
+
+#editModal > div {
+    animation: scaleIn 0.2s ease-out;
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* 통계 숫자 애니메이션 */
+#totalCount, #completedCount, #progressCount, #completionRate {
+    transition: all 0.3s ease;
+    font-weight: 700;
+}
+
+/* 통계 카드 강조 */
+.bg-white > .flex > div {
+    position: relative;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.bg-white > .flex > div:hover {
+    background: rgba(102, 126, 234, 0.1);
+    transform: scale(1.05);
+}
+
+/* 빈 상태 메시지 스타일 개선 */
+#emptyState p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+}
+
+/* 모달 스타일 개선 */
+#editModal > div {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 삭제/수정 버튼 호버 효과 */
+.bucket-item button[class*="red"]:hover {
+    background-color: #dc2626 !important;
+    transform: scale(1.1);
+}
+
+.bucket-item button[class*="yellow"]:hover {
+    background-color: #f59e0b !important;
+    transform: scale(1.1);
+}
+
+/* 추가 애니메이션 효과 */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.bucket-item.completed {
+    animation: pulse 0.5s ease-in-out;
+}
+
+/* 전체 컨테이너 여백 조정 */
+.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* 반응형 개선 */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem 0;
+    }
+
+    .bg-white {
+        margin: 0 0.5rem;
+    }
+
+    header h1 {
+        font-size: 2rem !important;
+    }
+}
