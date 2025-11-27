@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>김개발 - 풀스택 개발자 | 포트폴리오</title>
+  <meta name="description" content="5년 이상의 경력을 가진 풀스택 개발자입니다. React, Node.js, 클라우드 기술을 전문으로 합니다.">
+  <meta name="keywords" content="풀스택 개발자, 웹 개발자, 리액트 개발자, node.js, 포트폴리오">
+  <meta name="author" content="김개발">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="bg-gradient-to-br from-primary-600 to-primary-800 text-white py-20">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <!-- Profile Image -->
+      <div class="w-32 h-32 rounded-full bg-white bg-opacity-20 backdrop-blur-sm flex items-center justify-center mx-auto mb-6 border-4 border-white shadow-xl">
+        <span class="text-5xl font-bold text-white">김개</span>
+      </div>
+
+      <!-- Name and Role -->
+      <h1 class="text-4xl md:text-5xl font-bold mb-2">김개발</h1>
+      <p class="text-xl md:text-2xl text-primary-100 mb-6">풀스택 개발자</p>
+
+      <!-- Contact Information -->
+      <div class="flex flex-wrap justify-center gap-4 mb-8 text-sm md:text-base">
+        <a href="mailto:dev.kim@example.com" class="flex items-center hover:text-primary-200 transition-colors">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+          </svg>
+          dev.kim@example.com
+        </a>
+        <span class="text-primary-200">|</span>
+        <span class="flex items-center">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+          </svg>
+          010-1234-5678
+        </span>
+        <span class="text-primary-200">|</span>
+        <span class="flex items-center">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+          </svg>
+          서울, 대한민국
+        </span>
+      </div>
+
+      <!-- Social Links -->
+      <div class="flex justify-center gap-4">
+        <a href="https://github.com/kimdev" target="_blank" rel="noopener noreferrer"
+           class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all"
+           aria-label="GitHub 프로필">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/kimdev" target="_blank" rel="noopener noreferrer"
+           class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all"
+           aria-label="LinkedIn 프로필">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section-container bg-white">
+      <h2 class="section-title">소개</h2>
+      <div class="grid md:grid-cols-2 gap-8 items-start">
+        <div>
+          <p class="text-lg text-gray-700 leading-relaxed mb-4">
+            확장 가능한 웹 애플리케이션 구축에 <strong>5년 이상의 경험</strong>을 보유한 열정적인 풀스택 개발자입니다.
+            React, Node.js, 클라우드 기술을 전문으로 하며, 실제 비즈니스 문제를 해결하는 고품질 솔루션을
+            제공해온 검증된 경력이 있습니다.
+          </p>
+          <p class="text-lg text-gray-700 leading-relaxed">
+            복잡한 문제 해결, 성능 최적화, 직관적인 사용자 경험 만들기를 즐깁니다.
+            코딩을 하지 않을 때는 오픈소스 프로젝트에 기여하거나 최신 웹 기술을 탐구하고 있습니다.
+          </p>
+        </div>
+        <div class="space-y-4">
+          <div class="card p-4">
+            <h3 class="font-semibold text-lg mb-2 flex items-center">
+              <span class="text-2xl mr-2">🎯</span>
+              경력
+            </h3>
+            <p class="text-gray-600">풀스택 개발 5년 이상</p>
+          </div>
+          <div class="card p-4">
+            <h3 class="font-semibold text-lg mb-2 flex items-center">
+              <span class="text-2xl mr-2">🚀</span>
+              프로젝트
+            </h3>
+            <p class="text-gray-600">20개 이상의 성공적인 배포</p>
+          </div>
+          <div class="card p-4">
+            <h3 class="font-semibold text-lg mb-2 flex items-center">
+              <span class="text-2xl mr-2">👥</span>
+              팀 리더십
+            </h3>
+            <p class="text-gray-600">3-5명 개발자 팀 리드 경험</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-container bg-gray-100">
+      <h2 class="section-title">기술 스택</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Frontend Skills -->
+        <div class="card p-6">
+          <h3 class="text-xl font-bold mb-4 flex items-center">
+            <span class="text-2xl mr-2">💻</span>
+            프론트엔드
+          </h3>
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">React</span>
+                <span class="text-sm text-gray-600">90%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-primary-600 h-2 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">JavaScript/TypeScript</span>
+                <span class="text-sm text-gray-600">85%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-primary-600 h-2 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">HTML/CSS</span>
+                <span class="text-sm text-gray-600">95%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-primary-600 h-2 rounded-full" style="width: 95%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">Tailwind CSS</span>
+                <span class="text-sm text-gray-600">80%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-primary-600 h-2 rounded-full" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="card p-6">
+          <h3 class="text-xl font-bold mb-4 flex items-center">
+            <span class="text-2xl mr-2">⚙️</span>
+            백엔드
+          </h3>
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">Node.js</span>
+                <span class="text-sm text-gray-600">85%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-primary-600 h-2 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">Python</span>
+                <span class="text-sm text-gray-600">75%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-primary-600 h-2 rounded-full" style="width: 75%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">PostgreSQL</span>
+                <span class="text-sm text-gray-600">80%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-primary-600 h-2 rounded-full" style="width: 80%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">MongoDB</span>
+                <span class="text-sm text-gray-600">70%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-primary-600 h-2 rounded-full" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Others -->
+        <div class="card p-6">
+          <h3 class="text-xl font-bold mb-4 flex items-center">
+            <span class="text-2xl mr-2">🛠️</span>
+            도구 및 기타
+          </h3>
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">Git</span>
+                <span class="text-sm text-gray-600">90%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-primary-600 h-2 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">Docker</span>
+                <span class="text-sm text-gray-600">75%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-primary-600 h-2 rounded-full" style="width: 75%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">AWS</span>
+                <span class="text-sm text-gray-600">70%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-primary-600 h-2 rounded-full" style="width: 70%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">CI/CD</span>
+                <span class="text-sm text-gray-600">65%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-2">
+                <div class="bg-primary-600 h-2 rounded-full" style="width: 65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-container bg-white">
+      <h2 class="section-title">경력</h2>
+      <div class="space-y-8">
+        <!-- Experience Item 1 -->
+        <div class="card p-6 border-l-4 border-primary-600">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">시니어 풀스택 개발자</h3>
+              <p class="text-lg text-primary-600 font-medium">(주)테크코프</p>
+              <p class="text-gray-600 mt-1">서울, 한국</p>
+            </div>
+            <span class="text-gray-600 mt-2 md:mt-0 font-medium">2021.01 - 현재</span>
+          </div>
+          <ul class="space-y-2 mb-4 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-2 mt-1">•</span>
+              <span>10만 명 이상의 사용자에게 99.9% 가동률을 제공하는 마이크로서비스 아키텍처 개발 주도</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-2 mt-1">•</span>
+              <span>데이터베이스 최적화 및 캐싱 전략을 통해 애플리케이션 성능 40% 향상</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-2 mt-1">•</span>
+              <span>3명의 주니어 개발자 멘토링 및 코드 리뷰 진행, 코드 품질 30% 개선</span>
+            </li>
+          </ul>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Docker</span>
+          </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="card p-6 border-l-4 border-primary-500">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">풀스택 개발자</h3>
+              <p class="text-lg text-primary-600 font-medium">스타트업 XYZ</p>
+              <p class="text-gray-600 mt-1">원격 근무</p>
+            </div>
+            <span class="text-gray-600 mt-2 md:mt-0 font-medium">2019.06 - 2020.12</span>
+          </div>
+          <ul class="space-y-2 mb-4 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-2 mt-1">•</span>
+              <span>5개의 고객 대상 기능 구축 및 출시, 사용자 참여도 25% 증가</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-2 mt-1">•</span>
+              <span>데이터베이스 쿼리 최적화를 통해 API 응답 시간 50% 단축</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-2 mt-1">•</span>
+              <span>디자인 팀과 협업하여 반응형 UI 구현</span>
+            </li>
+          </ul>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">Redis</span>
+          </div>
+        </div>
+
+        <!-- Experience Item 3 -->
+        <div class="card p-6 border-l-4 border-primary-400">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">주니어 개발자</h3>
+              <p class="text-lg text-primary-600 font-medium">웹솔루션즈</p>
+              <p class="text-gray-600 mt-1">판교, 한국</p>
+            </div>
+            <span class="text-gray-600 mt-2 md:mt-0 font-medium">2018.08 - 2019.05</span>
+          </div>
+          <ul class="space-y-2 mb-4 text-gray-700">
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-2 mt-1">•</span>
+              <span>10개 이상의 클라이언트를 위한 반응형 웹 애플리케이션 개발</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-2 mt-1">•</span>
+              <span>애자일 개발 프로세스 참여 및 스프린트 진행</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-primary-600 mr-2 mt-1">•</span>
+              <span>레거시 코드베이스 유지보수 및 버그 수정</span>
+            </li>
+          </ul>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-container bg-gray-100">
+      <h2 class="section-title">주요 프로젝트</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card 1 -->
+        <div class="card overflow-hidden group">
+          <div class="relative h-48 bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
+            <span class="text-6xl">🛒</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-gray-900">이커머스 플랫폼</h3>
+            <p class="text-gray-600 mb-4 text-sm">
+              결제 통합 및 재고 관리 기능을 갖춘 완전한 온라인 쇼핑 플랫폼입니다.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Stripe</span>
+            </div>
+            <div class="flex gap-4">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                 class="text-primary-600 hover:text-primary-700 font-medium text-sm">
+                GitHub →
+              </a>
+              <a href="https://demo.example.com" target="_blank" rel="noopener noreferrer"
+                 class="text-primary-600 hover:text-primary-700 font-medium text-sm">
+                데모 →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="card overflow-hidden group">
+          <div class="relative h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+            <span class="text-6xl">📋</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-gray-900">업무 관리 대시보드</h3>
+            <p class="text-gray-600 mb-4 text-sm">
+              실시간 업데이트와 분석 기능을 갖춘 협업 프로젝트 관리 도구입니다.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="skill-tag">Vue.js</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">PostgreSQL</span>
+            </div>
+            <div class="flex gap-4">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                 class="text-primary-600 hover:text-primary-700 font-medium text-sm">
+                GitHub →
+              </a>
+              <a href="https://demo.example.com" target="_blank" rel="noopener noreferrer"
+                 class="text-primary-600 hover:text-primary-700 font-medium text-sm">
+                데모 →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="card overflow-hidden group">
+          <div class="relative h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+            <span class="text-6xl">🌤️</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2 text-gray-900">날씨 예보 앱</h3>
+            <p class="text-gray-600 mb-4 text-sm">
+              위치 기반 예보와 인터랙티브 지도를 제공하는 모바일 반응형 날씨 앱입니다.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">OpenWeather API</span>
+              <span class="skill-tag">Redux</span>
+            </div>
+            <div class="flex gap-4">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                 class="text-primary-600 hover:text-primary-700 font-medium text-sm">
+                GitHub →
+              </a>
+              <a href="https://demo.example.com" target="_blank" rel="noopener noreferrer"
+                 class="text-primary-600 hover:text-primary-700 font-medium text-sm">
+                데모 →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-container bg-white">
+      <h2 class="section-title">학력</h2>
+      <div class="max-w-2xl mx-auto">
+        <div class="card p-6">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-start">
+            <div class="flex-1">
+              <h3 class="text-xl font-bold text-gray-900">컴퓨터공학 학사</h3>
+              <p class="text-lg text-primary-600 font-medium mt-1">한국과학기술원 (KAIST)</p>
+              <p class="text-gray-600 mt-2">학점: 3.8/4.0</p>
+              <div class="mt-3">
+                <p class="text-sm font-medium text-gray-700 mb-2">주요 이수 과목:</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">자료구조</span>
+                  <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">알고리즘</span>
+                  <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">데이터베이스</span>
+                  <span class="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">웹 개발</span>
+                </div>
+              </div>
+            </div>
+            <span class="text-gray-600 mt-2 md:mt-0 font-medium">2014 - 2018</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section-container bg-gray-100">
+      <h2 class="section-title">자격증</h2>
+      <div class="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <!-- Certification 1 -->
+        <div class="card p-6 text-center">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-3xl">🏆</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-gray-900">AWS 공인 솔루션스 아키텍트</h3>
+          <p class="text-gray-600 mb-1 text-sm">Amazon Web Services</p>
+          <p class="text-sm text-gray-500">발급: 2023년 1월</p>
+        </div>
+
+        <!-- Certification 2 -->
+        <div class="card p-6 text-center">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-3xl">📜</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-gray-900">MongoDB 공인 개발자</h3>
+          <p class="text-gray-600 mb-1 text-sm">MongoDB University</p>
+          <p class="text-sm text-gray-500">발급: 2022년 3월</p>
+        </div>
+
+        <!-- Certification 3 -->
+        <div class="card p-6 text-center">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-3xl">⚛️</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2 text-gray-900">React 전문가 자격증</h3>
+          <p class="text-gray-600 mb-1 text-sm">Meta</p>
+          <p class="text-sm text-gray-500">발급: 2021년 9월</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p>&copy; 2024 김개발. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button
+    id="scrollToTop"
+    class="fixed bottom-8 right-8 w-12 h-12 bg-primary-600 text-white rounded-full shadow-lg hover:bg-primary-700 transition-all duration-300 opacity-0 invisible z-50 flex items-center justify-center"
+    aria-label="맨 위로 스크롤"
+  >
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+  </button>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

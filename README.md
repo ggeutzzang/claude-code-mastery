@@ -10,14 +10,20 @@ This repository serves as a learning space for:
 - Exploring best practices for AI-assisted development
 - Experimenting with different development patterns
 
-## Getting Started
+## Projects
 
-Clone this repository and start exploring!
+### 📁 [Web Resume](./web-resume/)
 
-```bash
-git clone https://github.com/YOUR_USERNAME/claude-code-mastery.git
-cd claude-code-mastery
-```
+반응형 개발자 웹 이력서 - HTML, CSS, JavaScript, Tailwind CSS로 제작
+
+**주요 기능:**
+- 완전 반응형 디자인 (모바일/태블릿/데스크탑)
+- 부드러운 스크롤 애니메이션
+- 상단으로 스크롤 버튼
+- 현대적인 UI/UX (Tailwind CSS)
+- SEO 최적화
+
+[자세히 보기 →](./web-resume/README.md)
 
 ## Contributing
 

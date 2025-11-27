@@ -1,0 +1,17 @@
+{
+  "name": "developer-web-resume",
+  "version": "1.0.0",
+  "description": "개발자 웹 이력서 - Tailwind CSS로 제작",
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/input.css -o ./css/styles.css",
+    "watch:css": "tailwindcss -i ./css/input.css -o ./css/styles.css --watch",
+    "dev": "npm run watch:css",
+    "build:prod": "tailwindcss -i ./css/input.css -o ./css/styles.css --minify"
+  },
+  "keywords": ["resume", "portfolio", "tailwindcss"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}
