@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Calendar, Clock, User } from 'lucide-react'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -15,9 +16,11 @@ export function BlogCard({ post }: BlogCardProps) {
       <Card className="h-full overflow-hidden transition-all hover:shadow-lg">
         {/* 커버 이미지 */}
         <div className="aspect-video w-full overflow-hidden bg-muted">
-          <img
+          <Image
             src={post.coverImage}
             alt={post.title}
+            width={800}
+            height={450}
             className="h-full w-full object-cover transition-transform hover:scale-105"
           />
         </div>

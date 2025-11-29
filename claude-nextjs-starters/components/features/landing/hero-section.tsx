@@ -6,6 +6,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Github } from 'lucide-react'
 import { ROUTES } from '@/lib/constants'
@@ -61,10 +62,13 @@ export function HeroSection() {
         className="mt-8 w-full max-w-5xl"
       >
         <div className="relative rounded-xl border bg-card p-2 shadow-2xl">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1920&h=1080&fit=crop&q=80"
             alt="Next.js Starter Kit Dashboard Preview"
+            width={1920}
+            height={1080}
             className="aspect-video w-full rounded-lg object-cover"
+            priority
           />
         </div>
       </motion.div>

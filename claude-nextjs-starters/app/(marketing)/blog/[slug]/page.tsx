@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Calendar, Clock, User, ArrowLeft } from 'lucide-react'
 import { blogPosts, getBlogPost } from '@/data/blog-posts'
 import { Badge } from '@/components/ui/badge'
@@ -98,7 +99,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
       {/* 커버 이미지 */}
       <div className="mx-auto mb-12 max-w-4xl overflow-hidden rounded-lg">
-        <img src={post.coverImage} alt={post.title} className="h-auto w-full object-cover" />
+        <Image
+          src={post.coverImage}
+          alt={post.title}
+          width={1200}
+          height={630}
+          className="h-auto w-full object-cover"
+        />
       </div>
 
       {/* 본문 */}
