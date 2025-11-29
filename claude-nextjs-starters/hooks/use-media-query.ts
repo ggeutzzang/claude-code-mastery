@@ -1,22 +1,26 @@
 import { useEffect, useState } from 'react'
 
 export function useMediaQuery(query: string): boolean {
-  const [matches, setMatches] = useState(false)
+  const [matches, setMatches] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.matchMedia(query).matches
+    }
+    return false
+  })
 
   useEffect(() => {
     const media = window.matchMedia(query)
 
-    // 초기값 설정
-    if (media.matches !== matches) {
-      setMatches(media.matches)
-    }
-
     // 리스너 추가
-    const listener = () => setMatches(media.matches)
+    const listener = (e: MediaQueryListEvent) => setMatches(e.matches)
+
+    // 초기 동기화를 위한 즉시 실행
+    listener({ matches: media.matches } as MediaQueryListEvent)
+
     media.addEventListener('change', listener)
 
     return () => media.removeEventListener('change', listener)
-  }, [matches, query])
+  }, [query])
 
   return matches
 }
