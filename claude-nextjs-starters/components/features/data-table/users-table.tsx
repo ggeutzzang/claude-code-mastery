@@ -14,7 +14,7 @@ import {
 } from '@/components/ui/table'
 import { Badge } from '@/components/ui/badge'
 import { Input } from '@/components/ui/input'
-import { users, type UserData } from '@/data/users'
+import { users } from '@/data/users'
 
 export function UsersTable() {
   const [searchTerm, setSearchTerm] = useState('')

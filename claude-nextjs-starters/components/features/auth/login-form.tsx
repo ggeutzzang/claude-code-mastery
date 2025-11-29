@@ -8,6 +8,7 @@ import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import Link from 'next/link'
+import { toast } from 'sonner'
 
 import { Button } from '@/components/ui/button'
 import {
@@ -33,17 +34,16 @@ export function LoginForm() {
     },
   })
 
-  async function onSubmit(data: LoginFormData) {
+  async function onSubmit(_data: LoginFormData) {
     setIsLoading(true)
 
-    // 실제 인증 로직은 제외하고 콘솔에만 로그 출력
-    console.log('로그인 데이터:', data)
-
-    // 시뮬레이션을 위한 딜레이
+    // 실제 API 호출 시뮬레이션
     await new Promise((resolve) => setTimeout(resolve, 1000))
 
     setIsLoading(false)
-    alert('로그인 성공! (데모)')
+    toast.success('로그인 성공!', {
+      description: '대시보드로 이동합니다.',
+    })
   }
 
   return (
